@@ -46,7 +46,7 @@ Para probar la aplicación en un entorno local realizar los siguientes comandos:
 npm install && npm run dev
 ```
 
-Esto levantará un servidor escuahdno cambios en el código con nodemon. Las variables de entorno definidas hasta ahora son:
+Esto levantará un servidor escuchando cambios en el código con nodemon. Las variables de entorno definidas hasta ahora son:
 
 ```txt
 LOG_LEVEL=debug | info | warn | error
