@@ -11,12 +11,12 @@ const gatewayMap: Record<string, () => PGateway> = {
   [Gateways.PGATEWAY_1]: () => new PGateway_1(),
   [Gateways.PGATEWAY_2]: () => new PGateway_2(),
   unsupported: () => {
-    throw new Error('Gateway not supported');
+    throw new Error('Gateway not supported. Define it in environment variable USE_GATEWAY');
   },
 };
 
 export function getPGateway(): PGateway {
   const gatewayType = process.env.USE_GATEWAY as unknown as Gateways;
 
-  return gatewayMap[gatewayType]();
+  return (gatewayMap[gatewayType] || gatewayMap.unsupported)();
 }

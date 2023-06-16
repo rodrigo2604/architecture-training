@@ -7,7 +7,7 @@ const app = new ExrpessServer();
 app
   .start()
   .then(() => {
-    logger.info('Strategy Pattern App successfully up!');
+    logger.info('Payment App successfully up!');
   })
   .catch((error) => {
     logger.error(error);
