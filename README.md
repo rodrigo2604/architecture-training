@@ -1,6 +1,14 @@
 <h1>Payment Application</h2>
 
-## Propósito
+- [Propósito](#propósito)
+- [Estructura de carpetas](#estructura-de-carpetas)
+  - [Modules](#modules)
+  - [App](#app)
+- [Configuración](#configuración)
+- [Desarrollo](#desarrollo)
+
+## Propósito
+
 Desarollar una pequeña aplicación de pasarela de pagos para practicar con arquitecturas. La aplicación levanta un pequeño servidor de express que expone de momento un único endpoint para realizar un pago a un solo destinatario.
 
 ## Estructura de carpetas
