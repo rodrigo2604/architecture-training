@@ -1,7 +1,7 @@
 {
-  "name": "strategy-pattern",
+  "name": "payment-application",
   "version": "1.0.0",
-  "description": "Basic repository to training strategy pattern",
+  "description": "Basic repository implementing a payment simple application",
   "main": "index.js",
   "scripts": {
     "start": "node -r dotenv/config dist/src/app/index.js",
