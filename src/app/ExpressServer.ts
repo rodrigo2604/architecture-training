@@ -8,6 +8,11 @@ export class ExrpessServer {
   async start(): Promise<void> {
     const app = express();
 
+    app.use(
+      express.json({
+        strict: false,
+      })
+    );
     app.use('/api', getRoutes());
     app.use(errorHandler);
 
